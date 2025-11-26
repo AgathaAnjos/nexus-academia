@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/unidades.css" />
+    <link rel="icon" type="image/png" href="images/Nx.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Protest+Strike&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Nexus</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- logo -->
+        <a class="logo" href="index.html"
+          ><img src="images/Nx.png" alt="Logo"
+        /></a>
+
+        <!-- nav -->
+        <ul class="nav-list">
+          <a href="planos.html" class="#">Planos</a>
+
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Modalidades</a>
+            <ul class="dropdown-content">
+              <li><a href="#">Musculação</a></li>
+              <li><a href="#">Artes Marciais</a></li>
+              <li><a href="#">Dança</a></li>
+              <li><a href="#">Corpo e Mente</a></li>
+              <li><a href="#">Avaliação Física</a></li>
+              <li><a href="#">Fisioterapia</a></li>
+            </ul>
+          </li>
+
+          <a href="unidades.html" class="#">Unidades</a>
+          <a href="formulario.html" class="#">Formulário</a>
+        </ul>
+      </nav>
+    </header>
+    <section class="banner">
+      <div class="banner-content">
+        <h2>Unidades da Academia Nexus</h2>
+        <p>Escolha uma unidade próxima e venha treinar com a gente!</p>
+        <a href="#unidades">Explorar Unidades</a>
+      </div>
+    </section>
+
+    <div class="uni" id="unidades">
+      <div class="store">
+        <div class="product">
+          <img src="images/uni/unidade1.jpg" alt="Unidade São Paulo" />
+          <div class="product-info">
+            <h3>Nexus São Paulo - Vila Mariana</h3>
+            <p>Rua Domingos de Morais, 1234 - SP</p>
+            <p class="price">Planos a partir de R$ 149,99/mês</p>
+          </div>
+          <a href="#cadastro" class="btn">Selecionar Unidade</a>
+        </div>
+
+        <div class="product">
+          <img src="images/uni/unidade2.jpg" alt="Unidade Rio de Janeiro" />
+          <div class="product-info">
+            <h3>Nexus Rio de Janeiro - Barra</h3>
+            <p>Av. das Américas, 4000 - RJ</p>
+            <p class="price">Planos a partir de R$ 149,99/mês</p>
+          </div>
+          <a href="#cadastro" class="btn">Selecionar Unidade</a>
+        </div>
+
+        <div class="product">
+          <img src="images/uni/unidade3.jpg" alt="Unidade Curitiba" />
+          <div class="product-info">
+            <h3>Nexus Curitiba - Juvevê</h3>
+            <p>Av. João Gualberto, 1487, Juvevê – Curitiba</p>
+            <p class="price">Planos a partir de R$ 149,99/mês</p>
+          </div>
+          <a href="#cadastro" class="btn">Selecionar Unidade</a>
+        </div>
+
+        <div class="product">
+          <img src="images/uni/unidade4.jpg" alt="Unidade Porto Alegre" />
+          <div class="product-info">
+            <h3>Nexus Porto Alegre - Moinhos</h3>
+            <p>Av. Protásio Alves, 669 - Rio Branco, Porto Alegre - RS</p>
+            <p class="price">Planos a partir de R$ 149,99/mês</p>
+          </div>
+          <a href="#cadastro" class="btn">Selecionar Unidade</a>
+        </div>
+
+        <div class="product">
+          <img src="images/uni/unidade5.jpg" alt="Unidade Belo Horizonte" />
+          <div class="product-info">
+            <h3>Nexus Belo Horizonte - Savassi</h3>
+            <p>Rua da Bahia, 345 - MG</p>
+            <p class="price">Planos a partir de R$ 149,99/mês</p>
+          </div>
+          <a href="#cadastro" class="btn">Selecionar Unidade</a>
+        </div>
+
+        <div class="product">
+          <img src="images/uni/unidade6.jpg" alt="Unidade Brasília" />
+          <div class="product-info">
+            <h3>Nexus Brasília - Asa Sul</h3>
+            <p>
+              St. de Clubes Esportivos Sul, Dentro do Clube da ASEEL lote 07 -
+              Asa Sul, Brasília - DF
+            </p>
+            <p class="price">Planos a partir de R$ 149,99/mês</p>
+          </div>
+          <a href="#cadastro" class="btn">Selecionar Unidade</a>
+        </div>
+
+      <div class="checkout" id="cadastro">
+        <h3>Finalizar Cadastro</h3>
+        <form>
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" required />
+
+          <label for="unidade">Unidade escolhida</label>
+          <select id="unidade" required>
+            <option value="">Selecione uma unidade</option>
+            <option>São Paulo - Vila Mariana</option>
+            <option>Rio de Janeiro - Barra</option>
+            <option>Curitiba - Curitiba</option>
+            <option>Porto Alegre - Moinhos</option>
+            <option>Belo Horizonte - Savassi</option>
+            <option>Brasília - Asa Sul</option>
+            <option>Recife - Boa Viagem</option>
+          </select>
+
+          <label for="plano">Plano desejado</label>
+          <select id="plano">
+            <option value="mensal">Mensal</option>
+            <option value="trimestral">Trimestral</option>
+            <option value="anual">Anual</option>
+          </select>
+
+          <button type="submit">Enviar Cadastro</button>
+        </form>
+      </div>
+    </div>
+
+  <footer>
+      <div class="footer-content">
+        <p>© 2025 Nexus. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

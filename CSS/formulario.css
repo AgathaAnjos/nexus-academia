@@ -1,0 +1,181 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Protest Strike", sans-serif;
+}
+
+:root {
+  --background: #0a0a0a;
+  --branco: #d9d9d9;
+  --roxo: #48008c;
+  --laranja: #ff6d00;
+}
+
+/* Background global */
+html,
+body {
+  background-color: var(--background) !important;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5vh 1.5vh;
+  box-shadow: 0 4vh 10vh rgba(0, 0, 0, 0.1);
+  position: relative;
+  flex-wrap: wrap;
+}
+
+/* LOGO */
+.logo img {
+  width: 7vw;
+  max-width: 100%;
+  padding: 1vh;
+  margin: 1vh 1vh 1vh 4vh;
+}
+
+/* Menu de navegação */
+ul.nav-list {
+  display: flex;
+  gap: 4vw;
+  margin: 2vh 6vh 1vh 1vh;
+  list-style: none;
+}
+
+/* Estilo dos links */
+ul.nav-list a {
+  text-decoration: none;
+  color: var(--laranja);
+  font-size: 4vh;
+  transition: color 0.1s ease-out;
+  font-family: "Protest Guerrilla", sans-serif;
+}
+
+ul.nav-list a:hover {
+  color: var(--roxo);
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--background);
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 8px;
+  padding: 8px 0;
+  margin-top: 5px;
+  border: 1px solid var(--roxo);
+}
+
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content li a {
+  display: block;
+  color: var(--laranja);
+  font-family: "Protest Guerrilla", sans-serif;
+  text-align: left;
+  padding: 12px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Fundo */
+body {
+  background-color: var(--background);
+}
+
+/* Container */
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+  background: var(--background);
+  padding: 25px;
+  border-radius: 10px;
+  border: 2px solid var(--roxo);
+}
+
+/* Título */
+h2 {
+  text-align: center;
+  color: var(--branco) !important;
+  margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: var(--laranja);
+}
+
+/* Inputs e Select */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--roxo);
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  background: var(--background);
+  color: var(--branco);
+}
+
+/* Foco */
+input:focus,
+select:focus {
+  border-color: var(--laranja);
+}
+
+/* Botão */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: var(--background);
+  color: var(--laranja);
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+button:hover {
+  color: var(--roxo);
+}
+
+/* Remove autofill */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px var(--background) inset !important;
+  -webkit-text-fill-color: var(--branco) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}

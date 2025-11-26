@@ -1,0 +1,221 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Protest Strike", sans-serif;
+}
+
+:root {
+  --background: #0a0a0a;
+  --branco: #d9d9d9;
+  --roxo: #48008c;
+  --laranja: #ff6d00;
+}
+
+/* Background global */
+html,
+body {
+  background-color: var(--background) !important;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5vh 1.5vh;
+  box-shadow: 0 4vh 10vh rgba(0, 0, 0, 0.1);
+  position: relative;
+  flex-wrap: wrap;
+}
+
+/* LOGO */
+.logo img {
+  width: 7vw;
+  max-width: 100%;
+  padding: 1vh;
+  margin: 1vh 1vh 1vh 4vh;
+}
+
+/* Menu de navegação */
+ul.nav-list {
+  display: flex;
+  gap: 4vw;
+  margin: 2vh 6vh 1vh 1vh;
+  list-style: none;
+}
+
+/* Estilo dos links */
+ul.nav-list a {
+  text-decoration: none;
+  color: var(--laranja);
+  font-size: 4vh;
+  transition: color 0.1s ease-out;
+  font-family: "Protest Guerrilla", sans-serif;
+}
+
+ul.nav-list a:hover {
+  color: var(--roxo);
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--background);
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 8px;
+  padding: 8px 0;
+  margin-top: 5px;
+  border: 1px solid var(--roxo);
+}
+
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content li a {
+  display: block;
+  color: var(--laranja);
+  font-family: "Protest Guerrilla", sans-serif;
+  text-align: left;
+  padding: 12px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+/* CONTAINER GERAL */
+.container {
+  max-width: 1500px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+  background: transparent !important;
+}
+
+h2 {
+  color: var(--branco) !important;
+  font-size: 1.8rem;
+
+  padding-left: 10px;
+  padding-bottom: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Protest Guerrilla", sans-serif;
+}
+
+/* CARDS DE PLANOS */
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.plan {
+  background: var(--background) !important;
+  border-radius: 12px;
+  border: 2px solid var(--laranja);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 30px 20px;
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.plan h3 {
+  color: var(--laranja);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 2.4rem;
+  color: var(--branco); /* antes estava #111 */
+}
+
+.price span {
+  font-size: 0.7em;
+  color: #aaaaaa;
+}
+
+/* LISTA DE RECURSOS */
+.plan ul {
+  list-style: none;
+  width: 100%;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.plan ul li {
+  margin: 10px 0;
+  padding-left: 25px;
+  position: relative;
+  font-size: 1rem;
+  color: var(--branco);
+}
+
+.plan ul li::before {
+  content: "✔";
+  color: var(--laranja);
+  position: absolute;
+  left: 0;
+}
+
+/* BOTÃO */
+.btn {
+  color: var(--roxo) !important;
+  padding: 14px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+  margin-top: auto;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: var(--laranja) !important;
+}
+
+/* FOOTER */
+.footer-content {
+  display: flex;
+  color: var(--roxo);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  font-size: 21px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--roxo);
+}
